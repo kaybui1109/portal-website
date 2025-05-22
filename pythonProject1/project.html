@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bùi Anh Kiệt - CV</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      padding: 30px 20px 50px;
+      min-height: 100vh;
+    }
+
+    .container {
+      background-color: rgba(0, 0, 0, 0.75);
+      border-radius: 16px;
+      max-width: 700px;
+      width: 100%;
+      padding: 40px 40px 30px;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .avatar {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+      box-shadow: 0 0 18px 4px #ffd700;
+      object-fit: cover;
+      background-color: #512da8;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 5px;
+      color: #ffd700;
+      text-shadow: 0 0 10px rgba(255, 215, 0, 0.85);
+    }
+
+    h2 {
+      font-weight: 700;
+      font-size: 1.6rem;
+      border-bottom: 3px solid #ffd700;
+      padding-bottom: 6px;
+      margin-top: 40px;
+      margin-bottom: 15px;
+      color: #ffea00;
+      letter-spacing: 1px;
+      text-align: left;
+    }
+
+    p, li {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #f1f1f1;
+      text-align: left;
+    }
+
+    .intro {
+      font-style: italic;
+      font-size: 1.15rem;
+      color: #eee;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    .info-list li {
+      margin-bottom: 8px;
+      color: #f0e68c;
+    }
+
+    .skills-list, .hobbies-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 10px;
+    }
+
+    .skill, .hobby {
+      background-color: #512da8;
+      padding: 7px 15px;
+      border-radius: 20px;
+      font-weight: 600;
+      font-size: 1rem;
+      box-shadow: 0 0 8px #6746c3;
+      cursor: default;
+      user-select: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .skill:hover, .hobby:hover {
+      background-color: #ffd700;
+      color: #212121;
+      box-shadow: 0 0 12px #ffd700;
+    }
+
+    .experience-item {
+      margin-bottom: 18px;
+    }
+
+    .experience-item h3 {
+      margin: 0 0 3px;
+      font-weight: 700;
+      color: #ffe066;
+      font-size: 1.2rem;
+    }
+
+    .experience-item span {
+      font-style: italic;
+      font-size: 0.95rem;
+      color: #ccc;
+    }
+
+    .experience-item p {
+      margin-top: 6px;
+      color: #ddd;
+    }
+
+    .project-item {
+      background-color: #4a148c;
+      border-radius: 12px;
+      padding: 15px 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 25px 2px #7b36ffb3 inset;
+      transition: transform 0.3s ease;
+      text-align: left;
+    }
+
+    .project-item:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 35px 4px #ffd700 inset;
+    }
+
+    .project-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #ffecb3;
+      margin-bottom: 8px;
+    }
+
+    .project-section {
+      margin-bottom: 6px;
+    }
+
+    .project-section strong {
+      color: #ffd700;
+    }
+
+    .contact-link {
+      color: #ffd700;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.1rem;
+      display: inline-block;
+      margin-top: 8px;
+      transition: color 0.3s ease;
+    }
+
+    .contact-link:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #aaa;
+      user-select: none;
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 30px 25px 25px;
+      }
+      h1 {
+        font-size: 2.4rem;
+      }
+      h2 {
+        font-size: 1.3rem;
+        margin-top: 30px;
+      }
+      .project-title {
+        font-size: 1.15rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container" role="main" aria-label="CV của Bùi Anh Kiệt">
+    <img src="https://avatars.dicebear.com/api/avataaars/bui_anh_kiet.svg" alt="Ảnh avatar hoạt hình của Bùi Anh Kiệt" class="avatar" />
+    <h1 tabindex="0">Bùi Anh Kiệt</h1>
+    <p class="intro" tabindex="0">
+      Sinh viên ngành Trí tuệ nhân tạo - FPT University
+    </p>
+
+    <section aria-labelledby="section-about">
+      <h2 id="section-about">Thông tin cá nhân</h2>
+      <ul class="info-list" tabindex="0">
+        <li><strong>Ngày sinh:</strong> 11/09/2006</li>
+        <li><strong>Chuyên ngành:</strong> Trí tuệ nhân tạo</li>
+        <li><strong>Trường:</strong> FPT University</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="section-experience">
+      <h2 id="section-experience">Kinh nghiệm làm việc</h2>
+      <div class="experience-item" tabindex="0">
+        <h3>Thực tập sinh phát triển phần mềm - Công ty ABC</h3>
+        <span>06/2023 - 08/2023</span>
+        <p>Tham gia phát triển ứng dụng web bằng JavaScript và React, hỗ trợ kiểm thử sản phẩm và viết tài liệu kỹ thuật.</p>
+      </div>
+      <div class="experience-item" tabindex="0">
+        <h3>Trợ giảng môn Lập trình Python - FPT University</h3>
+        <span>01/2023 - 05/2023</span>
+        <p>Hỗ trợ sinh viên nắm vững kiến thức lập trình Python, giải đáp thắc mắc và hướng dẫn thực hành.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="section-skills">
+      <h2 id="section-skills">Kỹ năng</h2>
+      <div class="skills-list" tabindex="0" aria-label="Danh sách kỹ năng">
+        <span class="skill">Python</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">Machine Learning</span>
+        <span class="skill">Data Analysis</span>
+        <span class="skill">React</span>
+        <span class="skill">SQL</span>
+      </div>
+    </section>
+
+    <section aria-labelledby="section-projects">
+      <h2 id="section-projects">Dự án nổi bật</h2>
+
+      <article class="project-item" tabindex="0" aria-labelledby="project-title-1">
+        <h3 id="project-title-1" class="project-title">Hệ thống nhận dạng khuôn mặt</h3>
+        <div class="project-section"><strong>Vị trí:</strong> Developer chính</div>
+        <div class="project-section"><strong>Nhiệm vụ:</strong> Xây dựng hệ thống nhận diện khuôn mặt và tối ưu thuật toán xử lý ảnh.</div>
+        <div class="project-section"><strong>Công nghệ:</strong> OpenCV, Python, TensorFlow</div>
+      </article>
+
+      <article class="project-item" tabindex="0" aria-labelledby="project-title-2">
+        <h3 id="project-title-2" class="project-title">Ứng dụng chatbot AI</h3>
+        <div class="project-section"><strong>Vị trí:</strong> Thành viên nhóm phát triển</div>
+        <div class="project-section"><strong>Nhiệm vụ:</strong> Thiết kế và triển khai phần giao diện tương tác chatbot.</div>
+        <div class="project-section"><strong>Công nghệ:</strong> NLP, JavaScript, React</div>
+      </article>
+
+      <article class="project-item" tabindex="0" aria-labelledby="project-title-3">
+        <h3 id="project-title-3" class="project-title">Phân tích dữ liệu bán hàng</h3>
+        <div class="project-section"><strong>Vị trí:</strong> Data analyst</div>
+        <div class="project-section"><strong>Nhiệm vụ:</strong> Phân tích, trực quan hóa và dự đoán xu hướng doanh thu.</div>
+        <div class="project-section"><strong>Công nghệ:</strong> Python, Pandas, Matplotlib</div>
+      </article>
+    </section>
+
+    <section aria-labelledby="section-hobbies">
+      <h2 id="section-hobbies">Sở thích</h2>
+      <div class="hobbies-list" tabindex="0" aria-label="Danh sách sở thích">
+        <span class="hobby">Đọc sách khoa học</span>
+        <span class="hobby">Chơi cờ vua</span>
+        <span class="hobby">Lập trình</span>
+        <span class="hobby">Du lịch khám phá</span>
+      </div>
+    </section>
+
+    <section aria-labelledby="section-contact">
+      <h2 id="section-contact">Liên hệ</h2>
+      <p>
+        <a href="https://www.facebook.com/anhkiet.bui.520357?locale=vi_VN" target="_blank" rel="noopener noreferrer" class="contact-link">
+          Facebook của Bùi Anh Kiệt
+        </a>
+      </p>
+    </section>
+
+    <footer>
+      &copy; 2024 Bùi Anh Kiệt
+    </footer>
+  </div>
+</body>
+</html>
+
